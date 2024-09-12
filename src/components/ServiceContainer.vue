@@ -3,14 +3,10 @@
         <div class="left-container-service">
             <div class="up-left-container-service">
                 <div class="participate-friends-div-service">
-                    <h3>
-                        participez et défiez vos amis dans des mini-jeux musicaux
-                    </h3>
+                    <h3>Participez et défiez vos amis dans des mini-jeux musicaux</h3>
                 </div>
                 <div class="exclu-trailer-div-service">
-                    <p>
-                        Regarde en exclusivité notre nouveau trailer promotionnel
-                    </p>
+                    <p>Regarde en exclusivité notre nouveau trailer promotionnel</p>
                     <img src="../assets/img/TrailerPromo.png" alt="">
                 </div>
             </div>
@@ -21,9 +17,7 @@
                 <rect x="115.448" y="423.224" width="25" height="120" rx="12.5" transform="rotate(114.742 115.448 423.224)" fill="#FC9464"/>
                 </svg>
                 <div class="open-beta">
-                    <p>
-                        Ouverture de notre beta 2025
-                    </p>
+                    <p>Ouverture de notre beta 2025</p>
                 </div>
                 <div class="jsb-feat-iim">
 

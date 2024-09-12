@@ -43,7 +43,7 @@ import Pricing from './components/Pricing.vue';
   }
 
 
-  .button-inscription-header{
+  .btn{
     background-color: $primary-color;
     color: white;
     padding: 0.5rem 1rem;
@@ -54,30 +54,38 @@ import Pricing from './components/Pricing.vue';
     justify-content: center;
     gap: 0.5rem;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &-primary{
+      background-color: $primary-color;
+
+      &:hover{
+        box-shadow: 0 0 10px 0 rgba(252, 148, 100, 0.8);
+      }
+    }
+
+    &-secondary{
+      background-color: $secondary-color;
+      width: fit-content;
+      margin: 0 auto;
+
+      &:hover{
+        box-shadow: 0 0 10px 0 rgb(236, 92, 108, 0.8);
+      }
+    }
+
+    &-white{
+      background-color: white;
+      color: $secondary-color;
+      width: fit-content;
+      margin: 0 auto;
+      &:hover{
+        box-shadow: 0 0 10px 0 rgb(255, 255, 255, 0.8);
+      }
+    }
   }
 
   li{
     list-style: none;
   }
-
-  #btn-bg-white{
-    background-color: white;
-    color: $secondary-color;
-    width: fit-content;
-    margin: 0 auto;
-    //shadow
-    box-shadow: 0 0 10px 0 rgb(255, 255, 255, 0.8);
-  }
-  #btn-bg-primary{
-    background-color: $primary-color;
-    box-shadow: 0 0 10px 0 rgba(252, 148, 100, 0.8);
-  }
-  #btn-bg-secondary{
-    background-color: $secondary-color;
-    width: fit-content;
-    margin: 0 auto;
-    //shadow=
-    box-shadow: 0 0 10px 0 rgb(236, 92, 108, 0.8);
-  }
-
-  </style>
+</style>

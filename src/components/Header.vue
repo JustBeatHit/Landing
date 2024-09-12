@@ -6,9 +6,9 @@ import ButtonInscription from './ButtonInscription.vue';
 <template>
   <header>
     <Navbar />
-    <div class="header-img-with-button">
+    <div class="header">
       <img src="../assets/img/Logo.svg" alt="Vue logo" />
-      <ButtonInscription text="S'inscrire" id="btn-bg-primary"/>
+      <ButtonInscription text="S'inscrire" class="btn-primary"/>
     </div>
   </header>
 </template>
@@ -42,13 +42,14 @@ header{
         cursor: pointer;
       }
     }
-    .header-img-with-button{
+    .header{
       display: flex;
       flex-direction: column;
       gap: 2rem;
       align-items: center;
       justify-content: center;
       text-transform: uppercase;
+      padding-bottom: 8rem;
       img{
         width: 60%;
         height: auto;

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 </script>
 <template>
-    <router-link to="/" class="button-inscription-header">
+    <router-link to="/" class="btn">
       <font-awesome-icon :icon="faArrowRight" />
           {{ text }}
         </router-link>

@@ -18,7 +18,7 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
                 <li class="fa"><font-awesome-icon :icon="faCheck" /> 1 défi journalier</li>
                 <li class="fa"><font-awesome-icon :icon="faCheck" /> Mode multi-joueur</li>
             </ul>
-            <ButtonInscription text="S'inscrire" id="btn-bg-secondary"></ButtonInscription>
+            <ButtonInscription text="S'inscrire" class="btn-secondary"></ButtonInscription>
           </div>
           <div class="pricing">
             <ul>
@@ -29,7 +29,7 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
                 <li class="fa"><font-awesome-icon :icon="faCheck" /> Tous les défis journaliers</li>
                 <li class="fa"><font-awesome-icon :icon="faCheck" /> Mode de difficultés</li>
             </ul>
-            <ButtonInscription text="S'abonner" id="btn-bg-secondary"></ButtonInscription>
+            <ButtonInscription text="S'abonner" class="btn-secondary"></ButtonInscription>
           </div>
           <div class="pricing">
             <ul>
@@ -40,7 +40,7 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
                 <li class="fa"><font-awesome-icon :icon="faCheck" /> Tous les modes et défis</li>
                 <li class="fa"><font-awesome-icon :icon="faCheck" /> Ajout de fonctionnalités IA </li>
             </ul>
-            <ButtonInscription text="S'abonner" id="btn-bg-white"></ButtonInscription>
+            <ButtonInscription text="S'abonner" class="btn-white"></ButtonInscription>
           </div>
         </div>
       </div>

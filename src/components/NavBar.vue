@@ -12,7 +12,7 @@ import ButtonInscription from './ButtonInscription.vue';
       <li><router-link to="/about">Pricing</router-link></li>
       <li><router-link to="/contact">À propos</router-link></li>
       <li>
-        <ButtonInscription text="S'inscrire" id="btn-bg-primary"/>
+        <ButtonInscription text="S'inscrire" class="btn-primary"/>
       </li>
     </ul>
   </nav>
