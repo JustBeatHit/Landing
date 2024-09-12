@@ -15,7 +15,6 @@ header{
       width: 100%;
       ul{
         display: inline-flex;
-        list-style: none;
         align-items: center;
         padding: 0;
         margin: 0;
@@ -31,7 +30,7 @@ header{
       gap: 2rem;
       align-items: center;
       justify-content: center;
-
+      text-transform: uppercase;
       img{
         width: 60%;
         height: auto;

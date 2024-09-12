@@ -4,6 +4,8 @@
 // Import
 @import 'header';
 @import 'service';
+@import 'presentationGames';
+@import 'pricing';
 
 :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -42,4 +44,9 @@
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+    cursor: pointer;
+  }
+
+  li{
+    list-style: none;
   }

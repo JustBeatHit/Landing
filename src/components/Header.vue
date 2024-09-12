@@ -7,7 +7,7 @@ import ButtonInscription from './ButtonInscription.vue';
     <Navbar />
     <div class="header-img-with-button">
       <img src="../assets/img/Logo.svg" alt="Vue logo" />
-      <ButtonInscription />
+      <ButtonInscription text="S'inscrire"/>
     </div>
   </header>
 </template>
