@@ -51,9 +51,10 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
 @import '../styles/_variables.scss';
 
     .section-pricing{
-    max-width: 1240px;
-    margin: 7rem auto 3rem auto;
-    
+      max-width: 1240px;
+      padding: 7rem 1rem 3rem 1rem;
+      margin: auto;
+
     h2{
         text-transform: uppercase;
         font-size: 2rem;
@@ -62,8 +63,6 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
 }
 
 .container-pricings{
-    max-width: 1240px;
-    margin: 0 auto;
     display: flex;
     flex-direction: row;
     gap: 1rem;

@@ -51,7 +51,7 @@
 
 .container-service{
     margin: 0 auto;
-    max-width: 1440px;
+    padding: 0 2rem;
     display: flex;
     flex-direction: row;
     gap: 1rem;
@@ -146,7 +146,6 @@
         border-radius: 10px;
         width: 25%;
         padding: 1rem;
-        
 
         p{
             font-size: 1.15rem;

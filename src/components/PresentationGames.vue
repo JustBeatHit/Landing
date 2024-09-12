@@ -59,7 +59,8 @@
 
 .section-games{
     max-width: 1240px;
-    margin: 7rem auto 3rem auto;
+    padding: 7rem 1rem 3rem 1rem;
+    margin: auto;
     
     h2{
         text-transform: uppercase;
@@ -70,7 +71,6 @@
     display: flex;
     flex-direction: row;
     max-width: 1240px;
-    height: 500px;
     margin: 0 auto;
     gap: 1rem;
     
