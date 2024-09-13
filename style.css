@@ -468,4 +468,14 @@ header .header-jbh img {
   text-decoration: underline;
 }
 
+@media only screen and (max-width: 748px) {
+  .footer .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer-logo-section .footerLogo {
+    margin: 0;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
