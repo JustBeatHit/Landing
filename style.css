@@ -390,7 +390,7 @@ header .header-jbh img {
 }
 
 .footer {
-  background: linear-gradient(45deg, #ff00bf 10%, #ff53a3 60%, #ff893a 100%);
+  background: linear-gradient(45deg, #872F74 10%, #E23145 60%, #FA9D4F 100%);
   padding: 20px 0;
   color: white;
   font-family: "Arial", sans-serif;
@@ -447,8 +447,9 @@ header .header-jbh img {
   margin: 20px 0;
 }
 .footer .footer-logo-section .footerLogo {
-  width: 300px; /* Adjust size as needed */
+  width: 250px; /* Adjust size as needed */
   height: auto;
+  margin: 0 100px;
 }
 .footer .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
