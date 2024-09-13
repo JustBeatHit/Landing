@@ -1,17 +1,19 @@
-.container-service{
+.container-service {
   margin: 0 auto;
   padding: 0 2rem;
   display: flex;
   flex-direction: row;
   gap: 1rem;
-  .left-container-service{
+
+  .left-container-service {
     width: 75%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 1rem;
-    .up-left-container-service{
+
+    .up-left-container-service {
       background-image: url('./src/assets/img/backgroundService.svg');
       background-size: cover;
       background-repeat: no-repeat;
@@ -21,41 +23,50 @@
       border-radius: 10px;
       padding: 1rem;
 
-      .participate-friends-div-service{
+      .participate-friends-div-service {
         font-size: 1.75rem;
         text-transform: uppercase;
-        h3{
+
+        h3 {
           margin: 0;
+          font-family: 'Goia Display';
+          font-variation-settings: 'wght' 68, 'slnt' 100;
+          line-height: 56px;
         }
       }
-      .exclu-trailer-div-service{
+
+      .exclu-trailer-div-service {
         display: flex;
         flex-direction: column;
         align-items: end;
         gap: 1rem;
-        p{
+
+        p {
           color: $secondary-color;
-          font-weight: bold;
-          font-style: italic;
+          font-variation-settings: 'wght' 68, 'slnt' 100;
+          text-transform: uppercase;
           font-size: 1.5rem;
           text-align: end;
           width: 75%;
           margin: 0;
         }
-        img{
+
+        img {
           height: 220px;
           width: 400px;
         }
       }
     }
-    .down-left-container-service{
+
+    .down-left-container-service {
       display: flex;
       flex-direction: row;
       position: relative;
       justify-content: flex-end;
       width: 100%;
       gap: 1rem;
-      svg{
+
+      svg {
         position: absolute;
         top: -30px;
         left: 60px;
@@ -63,7 +74,8 @@
         width: auto;
         z-index: -2;
       }
-      .open-beta{
+
+      .open-beta {
         text-transform: uppercase;
         background-image: url('./src/assets/img/backgroundGradient.svg');
         background-size: cover;
@@ -74,10 +86,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        font-variation-settings: 'wght' 68, 'slnt' 100;
         font-size: 1.5rem;
-        font-weight:700;
       }
-      .jsb-feat-iim{
+
+      .jsb-feat-iim {
         width: 330px;
         height: 132px;
         border-radius: 10px;
@@ -88,7 +101,8 @@
       }
     }
   }
-  .right-container-service{
+
+  .right-container-service {
     display: flex;
     flex-direction: column;
     background-color: $primary-color;
@@ -96,28 +110,44 @@
     width: 25%;
     padding: 1rem;
 
-    p{
+    span {
+      font-variation-settings: 'wght' 68, 'slnt' 100;
+      line-height: 100%;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-variation-settings: 'wght' 20, 'slnt' 0;
       font-size: 1.15rem;
       margin: 0;
     }
-    .separator{
+
+    .separator {
       width: 100%;
       height: 2rem;
     }
-    h2{
+
+    h2 {
+      font-family: 'Goia Display';
+      font-variation-settings: 'wght' 68, 'slnt' 100;
+      line-height: 110%;
+      text-transform: uppercase;
       font-size: 2rem;
       margin: 0;
+      margin-bottom: 10px;
     }
-    div{
+
+    div {
       position: relative;
 
-      svg{
+      svg {
         position: absolute;
         top: -25px;
         width: 200px;
       }
     }
-    img{
+
+    img {
       position: absolute;
       top: -40px;
       right: -60px;

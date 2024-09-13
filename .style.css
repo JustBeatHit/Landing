@@ -1,0 +1,48 @@
+header {
+  color: white;
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 1240px;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  overflow: visible;
+}
+header nav {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  width: 100%;
+}
+header nav ul {
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+header nav li {
+  margin: 0 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+header .header-jbh {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  padding-bottom: 8rem;
+}
+header .header-jbh img {
+  width: 60%;
+  height: auto;
+}
+header .bg-image {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+/*# sourceMappingURL=.style.css.map */
