@@ -92,3 +92,10 @@
     opacity: 0;
   }
 }
+
+@media only screen and (max-width: 748px) {
+  .container-games{
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
