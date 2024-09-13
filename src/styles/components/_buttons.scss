@@ -39,3 +39,25 @@
     }
   }
 }
+
+.btn-expand{
+  background-color: #fff;
+  border-radius: 125px 125px 16px 125px;
+  padding: 20px 16px 16px 20px;
+  border: none;
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover{
+    img{
+      transform: translate(5px, -5px);
+    }
+  }
+  img{
+    transition: all 0.2s ease-in-out;
+    width: 36px;
+  }
+}
