@@ -3,14 +3,10 @@
         <div class="left-container-service">
             <div class="up-left-container-service">
                 <div class="participate-friends-div-service">
-                    <h3>
-                        participez et défiez vos amis dans des mini-jeux musicaux
-                    </h3>
+                    <h3>Participez et défiez vos amis dans des mini-jeux musicaux</h3>
                 </div>
                 <div class="exclu-trailer-div-service">
-                    <p>
-                        Regarde en exclusivité notre nouveau trailer promotionnel
-                    </p>
+                    <p>Regarde en exclusivité notre nouveau trailer promotionnel</p>
                     <img src="../assets/img/TrailerPromo.png" alt="">
                 </div>
             </div>
@@ -21,9 +17,7 @@
                 <rect x="115.448" y="423.224" width="25" height="120" rx="12.5" transform="rotate(114.742 115.448 423.224)" fill="#FC9464"/>
                 </svg>
                 <div class="open-beta">
-                    <p>
-                        Ouverture de notre beta 2025
-                    </p>
+                    <p>Ouverture de notre beta 2025</p>
                 </div>
                 <div class="jsb-feat-iim">
 
@@ -50,139 +44,3 @@
         </div>
     </div>
 </template>
-
-
-<style lang="scss">
-@import '../styles/_variables.scss';
-
-.container-service{
-    margin: 0 auto;
-    max-width: 1440px;
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    .left-container-service{
-        width: 75%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 1rem;
-        .up-left-container-service{
-            background-image: url('../assets/img/backgroundService.svg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            border-radius: 10px;
-            padding: 1rem;
-
-            .participate-friends-div-service{
-                font-size: 1.75rem;
-                text-transform: uppercase;
-                h3{
-                    margin: 0;
-                }
-            }
-            .exclu-trailer-div-service{
-                display: flex;
-                flex-direction: column;
-                align-items: end;
-                gap: 1rem;
-                p{
-                    color: $secondary-color;
-                    font-weight: bold;
-                    font-style: italic; 
-                    font-size: 1.5rem;
-                    text-align: end;
-                    width: 75%;
-                    margin: 0;
-                }
-                img{
-                    height: 220px;
-                    width: 400px;
-                }
-            }
-        }
-        .down-left-container-service{
-            display: flex;
-            flex-direction: row;
-            position: relative;
-            justify-content: flex-end;
-            width: 100%;
-            gap: 1rem;
-            svg{
-                position: absolute;
-                top: -30px;
-                left: 60px;
-                height: 225px;
-                width: auto;
-                z-index: -2;
-            }
-            .open-beta{
-                text-transform: uppercase;
-                background-image: url('../assets/img/backgroundGradient.svg');
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center;
-                width: 440px;
-                border-radius: 10px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 1.5rem;
-                font-weight:700;
-            }
-            .jsb-feat-iim{
-                width: 330px;
-                height: 132px;
-                border-radius: 10px;
-                background-image: url('../assets/img/background_JBH_IIM.svg');
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center;
-            }
-        }
-    }
-    .right-container-service{
-        display: flex;
-        flex-direction: column;
-        background-color: $primary-color;
-        border-radius: 10px;
-        width: 25%;
-        padding: 1rem;
-        
-
-        p{
-            font-size: 1.15rem;
-            margin: 0;
-        }
-        .separator{
-            width: 100%;
-            height: 2rem;
-        }
-        h2{
-            font-size: 2rem;
-            margin: 0;
-        }
-        div{
-            position: relative;
-
-            svg{
-                position: absolute;
-                top: -25px;
-                width: 200px;
-            }
-        }
-        img{
-            position: absolute;
-            top: -40px;
-            right: -60px;
-            width: auto;
-            height: 25vw;
-            // z-index: -1;
-        }
-    }
-}
-</style>
