@@ -1,45 +1,46 @@
-.container-service{
-  margin: 0 auto;
+.services{
+  margin: 0 auto 5rem 0;
   padding: 0 2rem;
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  .left-container-service{
-    width: 75%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 1rem;
-    .up-left-container-service{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  max-height: 700px;
+  position: relative;
+    .concept{
+      grid-column: 1 / 4;
+      grid-row: 1 / 3;
       background-image: url('./src/assets/img/backgroundService.svg');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      display: flex;
+      justify-content: space-evenly;
       border-radius: 10px;
       padding: 1rem;
+      max-height: 460px;
 
-      .participate-friends-div-service{
-        font-size: 1.75rem;
+      .concept__title{
+        font-size: 2rem;
         text-transform: uppercase;
         h3{
           margin: 0;
+          max-width: 75%;
         }
       }
-      .exclu-trailer-div-service{
+      .concept__trailer{
         display: flex;
         flex-direction: column;
         align-items: end;
         gap: 1rem;
-        p{
+        width: 100%;
+        h3{
           color: $secondary-color;
           font-weight: bold;
           font-style: italic;
           font-size: 1.5rem;
           text-align: end;
-          width: 75%;
+          text-transform: uppercase;
           margin: 0;
         }
         img{
@@ -47,14 +48,6 @@
           width: 400px;
         }
       }
-    }
-    .down-left-container-service{
-      display: flex;
-      flex-direction: row;
-      position: relative;
-      justify-content: flex-end;
-      width: 100%;
-      gap: 1rem;
       svg{
         position: absolute;
         top: -30px;
@@ -63,38 +56,53 @@
         width: auto;
         z-index: -2;
       }
-      .open-beta{
-        text-transform: uppercase;
-        background-image: url('./src/assets/img/backgroundGradient.svg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 440px;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.5rem;
-        font-weight:700;
-      }
-      .jsb-feat-iim{
-        width: 330px;
-        height: 132px;
-        border-radius: 10px;
-        background-image: url('./src/assets/img/background_JBH_IIM.svg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-      }
     }
+
+  .open-beta{
+    grid-column: 1 / 3;
+    grid-row: 3;
+    text-transform: uppercase;
+    background-image: url('./src/assets/img/backgroundGradient.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 75%;
+    margin: 0 0 0 auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight:700;
   }
-  .right-container-service{
+
+  .jbh-feat-iim{
+    grid-column: 3 / 4;
+    grid-row: 3;
+    width: 100%;
+    border-radius: 10px;
+    background-image: url('./src/assets/img/background_JBH_IIM.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .down-arrow {
+    grid-column: 1;
+    grid-row: 3;
+    position: absolute;
+    top: -50%;
+    z-index: -1;
+  }
+  .new-game{
+    grid-column: 4;
+    grid-row: 1 / 4;
     display: flex;
     flex-direction: column;
     background-color: $primary-color;
     border-radius: 10px;
-    width: 25%;
+    width: 100%;
     padding: 1rem;
+    position: relative;
 
     p{
       font-size: 1.15rem;
@@ -119,10 +127,9 @@
     }
     img{
       position: absolute;
-      top: -40px;
-      right: -60px;
-      width: auto;
-      height: 25vw;
+      width: 100%;
+      bottom: -3%;
+      right: -8%;
     }
   }
 }
