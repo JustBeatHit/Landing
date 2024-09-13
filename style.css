@@ -286,22 +286,22 @@ header .header-jbh img {
   padding: 1rem;
   max-height: 460px;
 }
-.services .concept .concept__title {
+.services .concept__title {
   font-size: 2rem;
   text-transform: uppercase;
 }
-.services .concept .concept__title h3 {
+.services .concept__title h2 {
   margin: 0;
   max-width: 75%;
 }
-.services .concept .concept__trailer {
+.services .concept__trailer {
   display: flex;
   flex-direction: column;
   align-items: end;
   gap: 1rem;
   width: 100%;
 }
-.services .concept .concept__trailer h3 {
+.services .concept__trailer h3 {
   color: #EC5C6C;
   font-weight: bold;
   font-style: italic;
@@ -310,7 +310,7 @@ header .header-jbh img {
   text-transform: uppercase;
   margin: 0;
 }
-.services .concept .concept__trailer img {
+.services .concept__trailer img {
   height: 220px;
   width: 400px;
 }
@@ -338,6 +338,7 @@ header .header-jbh img {
   align-items: center;
   font-size: 1.5rem;
   font-weight: 700;
+  text-align: center;
 }
 .services .jbh-feat-iim {
   grid-column: 3/4;
@@ -394,6 +395,66 @@ header .header-jbh img {
   right: -8%;
 }
 
+@media only screen and (max-width: 748px) {
+  .services {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    max-height: 1000px;
+    padding: 0 1rem;
+  }
+  .services .concept {
+    grid-column: 1/4;
+    grid-row: 1/4;
+    background-image: url("./src/assets/img/backgroundServiceMobile.svg");
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 4rem;
+  }
+  .services .concept__title {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .services .concept__title h2 {
+    margin: 0;
+    max-width: 100%;
+  }
+  .services .concept__trailer h3 {
+    font-size: 0.9rem;
+  }
+  .services .concept__trailer img {
+    height: 150px;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .services .concept svg {
+    height: 150px;
+  }
+  .services .open-beta {
+    grid-column: 1/4;
+    grid-row: 4;
+    width: 100%;
+    font-size: 1.1rem;
+  }
+  .services .jbh-feat-iim {
+    grid-column: 1/4;
+    grid-row: 5;
+  }
+  .services .down-arrow {
+    display: none;
+  }
+  .services .new-game {
+    grid-column: 1/4;
+    grid-row: 6/8;
+    padding: 1rem 1rem 5rem 1rem;
+  }
+  .services .new-game img {
+    width: 70%;
+    bottom: -45%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+}
 .footer {
   background: linear-gradient(45deg, #ff00bf 10%, #ff53a3 60%, #ff893a 100%);
   padding: 20px 0;

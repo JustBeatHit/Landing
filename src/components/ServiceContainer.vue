@@ -2,7 +2,7 @@
     <div class="services">
           <div class="concept">
               <div class="concept__title">
-                  <h3>Participez et défiez vos amis dans des mini-jeux musicaux</h3>
+                  <h2>Participez et défiez vos amis dans des mini-jeux musicaux</h2>
               </div>
               <div class="concept__trailer">
                   <h3>Regarde en exclusivité notre <br> nouveau trailer promotionnel</h3>

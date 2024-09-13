@@ -20,15 +20,15 @@
       padding: 1rem;
       max-height: 460px;
 
-      .concept__title{
+      &__title{
         font-size: 2rem;
         text-transform: uppercase;
-        h3{
+        h2{
           margin: 0;
           max-width: 75%;
         }
       }
-      .concept__trailer{
+      &__trailer{
         display: flex;
         flex-direction: column;
         align-items: end;
@@ -74,6 +74,7 @@
     align-items: center;
     font-size: 1.5rem;
     font-weight:700;
+    text-align: center;
   }
 
   .jbh-feat-iim{
@@ -132,4 +133,70 @@
       right: -8%;
     }
   }
+}
+
+@media only screen and (max-width: 748px) {
+    .services{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(7, 1fr);
+        max-height: 1000px;
+        padding: 0 1rem;
+        .concept{
+          grid-column: 1 / 4;
+          grid-row: 1 / 4;
+          background-image: url('./src/assets/img/backgroundServiceMobile.svg');
+          flex-direction: column;
+          justify-content: space-around;
+          gap: 4rem;
+
+          &__title{
+            font-size: 1rem;
+            text-align: center;
+            h2{
+              margin: 0;
+              max-width: 100%;
+            }
+          }
+
+          &__trailer{
+              h3{
+              font-size: 0.9rem;
+              }
+              img{
+                height: 150px;
+                width: 300px;
+                margin: 0 auto;
+              }
+          }
+
+          svg{
+              height: 150px;
+          }
+        }
+        .open-beta{
+          grid-column: 1 / 4;
+          grid-row: 4;
+          width: 100%;
+          font-size: 1.1rem;
+        }
+        .jbh-feat-iim{
+          grid-column: 1 / 4;
+          grid-row: 5;
+        }
+        .down-arrow {
+          display: none;
+        }
+        .new-game{
+          grid-column: 1 / 4;
+          grid-row: 6 / 8;
+          padding: 1rem 1rem 5rem 1rem;
+          img{
+            width: 70%;
+            bottom: -45%;
+            right:  0;
+            left: 0;
+            margin: 0 auto;
+          }
+        }
+    }
 }
