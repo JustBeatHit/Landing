@@ -6,7 +6,7 @@ import ButtonInscription from './ButtonInscription.vue';
   <header>
     <Navbar />
     <div class="header-jbh">
-      <img src="../assets/img/Logo.svg" alt="Vue logo" />
+      <img src="../../public/assets/img/Logo.svg" alt="Vue logo" />
       <ButtonInscription text="S'inscrire" class="btn-primary"/>
     </div>
   </header>

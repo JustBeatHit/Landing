@@ -58,7 +58,7 @@
   <div class="rightSide">
 
 <div class="footer-logo-section">
-  <img class="footerLogo" src="../assets/img/FooterLogo.svg" alt="Just Beat Hit Logo" />
+  <img class="footerLogo" src="../../public/assets/img/FooterLogo.svg" alt="Just Beat Hit Logo" />
 </div>
     </div>
   </footer>

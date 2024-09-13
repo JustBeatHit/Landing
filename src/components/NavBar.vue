@@ -4,7 +4,7 @@ import ButtonInscription from './ButtonInscription.vue';
 <template>
   <nav>
     <ul>
-      <li><router-link to="/"><img src="../assets/img/LogoMini.svg" alt="Vue logo" /></router-link></li>
+      <li><router-link to="/"><img src="../../public/assets/img/LogoMini.svg" alt="Vue logo" /></router-link></li>
     </ul>
     <ul>
       <li><router-link to="/">Home</router-link></li>

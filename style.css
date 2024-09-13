@@ -187,6 +187,71 @@ header .header-jbh img {
   opacity: 0;
 }
 
+.games-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.game {
+  width: 30%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+.game .reduced-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.game .reduced-content img {
+  max-width: 50px;
+  margin-bottom: 1rem;
+}
+.game .reduced-content h2 {
+  font-size: 1.5rem;
+}
+.game .reduced-content h4 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+.game .reduced-content button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.game .reduced-content button .icon-expand {
+  font-size: 1rem;
+}
+.game .expanded-content {
+  display: flex;
+  justify-content: space-between;
+}
+.game .expanded-content .left h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+.game .expanded-content .left h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.game .expanded-content .left p {
+  font-size: 1rem;
+}
+.game .expanded-content .right img {
+  max-width: 100px;
+}
+.game.expanded {
+  width: 100%;
+}
+
 @media only screen and (max-width: 748px) {
   .container-games {
     flex-direction: column;

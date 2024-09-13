@@ -6,7 +6,7 @@
               </div>
               <div class="concept__trailer">
                   <h3>Regarde en exclusivité notre <br> nouveau trailer promotionnel</h3>
-                  <img src="../assets/img/TrailerPromo.png" alt="">
+                  <img src="../../public/assets/img/TrailerPromo.png" alt="">
               </div>
           </div>
           <div class="down-arrow">
@@ -37,7 +37,7 @@
             <p>
                 Retape les paroles de chansons aussi vite qu'elles sont chantées !
             </p>
-            <img src="../assets/img/karakaku.png" alt="">
+            <img src="../../public/assets/img/karakaku.png" alt="">
         </div>
     </div>
 </template>
