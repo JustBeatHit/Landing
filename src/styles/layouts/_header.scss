@@ -1,4 +1,4 @@
-header{
+header {
   color: white;
   padding: 1rem;
   margin: 0 auto;
@@ -6,25 +6,31 @@ header{
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  nav{
+  overflow: visible;
+
+  nav {
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 1rem;
     width: 100%;
-    ul{
+    font-variation-settings: 'wght' 68, 'slnt' 100;
+
+    ul {
       display: inline-flex;
       align-items: center;
       padding: 0;
       margin: 0;
     }
-    li{
+
+    li {
       margin: 0 1rem;
       text-transform: uppercase;
       cursor: pointer;
     }
   }
-  .header-jbh{
+
+  .header-jbh {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -32,9 +38,123 @@ header{
     justify-content: center;
     text-transform: uppercase;
     padding-bottom: 8rem;
-    img{
+
+    img {
       width: 60%;
       height: auto;
+
+    }
+
+  }
+
+  // .bg-image {
+  //   position: absolute;
+  //   left: 0;
+  //   right: 0;
+  // }
+
+  .animated-background {
+    width: 60vw;
+    height: 60vw;
+    z-index: -1;
+    filter: blur(100px);
+    background: linear-gradient(60deg, rgba(182, 55, 110, 0.20) 13.21%, rgba(246, 53, 45, 0.20) 61.86%, rgba(251, 154, 77, 0.20) 85.83%);
+    border-radius: 50%;
+    position: absolute;
+    animation: move 20s ease-in-out infinite, bounce 10s ease-in-out infinite, rotate 45s infinite;
+  }
+
+  .animated-background.inverse {
+    width: 50vw;
+    height: 50vw;
+    animation: move-inverse 30s ease-in-out infinite reverse, bounce 10s ease-in-out infinite reverse, rotate-inverse 45s infinite reverse;
+  }
+
+  /* Déplacement de l'image */
+  @keyframes move {
+    0% {
+      top: 0;
+      left: 0;
+    }
+
+    25% {
+      top: calc(100vh - 80vh);
+      left: calc(100vw - 50vw);
+    }
+
+    50% {
+      top: calc(100vh - 100vh);
+      left: calc(100vw - 80vw);
+    }
+
+    75% {
+      top: calc(100vh - 60vh);
+      left: calc(100vw - 100vw);
+    }
+
+    100% {
+      top: 0;
+      left: 0;
+    }
+  }
+
+  @keyframes move-inverse {
+    0% {
+      top: 0;
+      left: 0;
+    }
+
+    25% {
+      top: calc(100vh - 60vh);
+      left: calc(100vw - 100vw);
+    }
+
+    50% {
+      top: calc(100vh - 100vh);
+      left: calc(100vw - 80vw);
+    }
+
+    75% {
+      top: calc(100vh - 60vh);
+      left: calc(100vw - 100vw);
+    }
+
+    100% {
+      top: 0;
+      left: 0;
+    }
+  }
+
+  /* Effet de rebond */
+  @keyframes bounce {
+
+    0%,
+    100% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.2);
+    }
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes rotate-inverse {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(-360deg);
     }
   }
 }

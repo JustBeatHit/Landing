@@ -1,5 +1,18 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Goia";
+  src: url("./src/assets/fonts/Goia/GoiaVariable.ttf") format("truetype");
+  font-weight: 100 900; /* Define the range of font weights */
+  font-style: oblique -10deg 30deg;
+}
+@font-face {
+  font-family: "Goia Display";
+  src: url("./src/assets/fonts/Goia/GoiaDisplayVariable.ttf") format("truetype");
+  font-weight: 100 900; /* Define the range of font weights */
+  font-style: italic -10deg 30deg;
+}
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Goia", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
@@ -18,7 +31,6 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
   overflow-x: hidden;
 }
 
@@ -38,6 +50,9 @@ li {
   gap: 0.5rem;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  font-variation-settings: "wght" 68, "slnt" 100;
+  font-family: "Goia Display";
+  text-transform: uppercase;
 }
 .btn-primary {
   background-color: #FC9464;
@@ -49,11 +64,15 @@ li {
   background-color: #EC5C6C;
   width: fit-content;
   margin: 0 auto;
+  font-variation-settings: "wght" 68, "slnt" 100;
+  font-family: "Goia";
 }
 .btn-secondary:hover {
   box-shadow: 0 0 10px 0 rgba(236, 92, 108, 0.8);
 }
 .btn-white {
+  font-family: "Goia";
+  font-variation-settings: "wght" 68, "slnt" 100;
   background-color: white;
   color: #EC5C6C;
   width: fit-content;
@@ -71,6 +90,9 @@ header {
   display: flex;
   flex-direction: column;
   gap: 4rem;
+  overflow: visible;
+  /* Déplacement de l'image */
+  /* Effet de rebond */
 }
 header nav {
   display: inline-flex;
@@ -78,6 +100,7 @@ header nav {
   justify-content: space-between;
   margin-top: 1rem;
   width: 100%;
+  font-variation-settings: "wght" 68, "slnt" 100;
 }
 header nav ul {
   display: inline-flex;
@@ -103,6 +126,89 @@ header .header-jbh img {
   width: 60%;
   height: auto;
 }
+header .animated-background {
+  width: 60vw;
+  height: 60vw;
+  z-index: -1;
+  filter: blur(100px);
+  background: linear-gradient(60deg, rgba(182, 55, 110, 0.2) 13.21%, rgba(246, 53, 45, 0.2) 61.86%, rgba(251, 154, 77, 0.2) 85.83%);
+  border-radius: 50%;
+  position: absolute;
+  animation: move 20s ease-in-out infinite, bounce 10s ease-in-out infinite, rotate 45s infinite;
+}
+header .animated-background.inverse {
+  width: 50vw;
+  height: 50vw;
+  animation: move-inverse 30s ease-in-out infinite reverse, bounce 10s ease-in-out infinite reverse, rotate-inverse 45s infinite reverse;
+}
+@keyframes move {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 20vh;
+    left: 50vw;
+  }
+  50% {
+    top: 0vh;
+    left: 20vw;
+  }
+  75% {
+    top: 40vh;
+    left: 0vw;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+@keyframes move-inverse {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 40vh;
+    left: 0vw;
+  }
+  50% {
+    top: 0vh;
+    left: 20vw;
+  }
+  75% {
+    top: 40vh;
+    left: 0vw;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-inverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
 
 .section-games {
   max-width: 1240px;
@@ -110,8 +216,10 @@ header .header-jbh img {
   margin: auto;
 }
 .section-games h2 {
+  font-family: "Goia";
+  font-variation-settings: "wght" 68, "slnt" 100;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .container-games {
@@ -132,8 +240,18 @@ header .header-jbh img {
   border-radius: 10px;
   overflow: hidden;
 }
-.container-games .game h2, .container-games .game h4, .container-games .game p {
+.container-games .game h2,
+.container-games .game h4,
+.container-games .game p {
   margin: 0.5rem 0;
+}
+.container-games .game h2 {
+  font-family: "Goia Display";
+}
+.container-games .game h4 {
+  font-variation-settings: "wght" 68, "slnt" 100;
+  text-transform: uppercase;
+  font-size: 1.25rem;
 }
 .container-games .game ul {
   position: relative;
@@ -149,8 +267,13 @@ header .header-jbh img {
 .container-games .game .ul-game-expanded {
   width: 75%;
 }
-.container-games .game li p, .container-games .game li h3 {
+.container-games .game .ul-game-expanded h2 {
+  font-size: 5rem;
+}
+.container-games .game li p,
+.container-games .game li h3 {
   font-size: 1.25rem;
+  font-variation-settings: "wght" 20, "slnt" 0;
 }
 .container-games .game-expanded {
   flex: 2;
@@ -195,10 +318,11 @@ header .header-jbh img {
 }
 .section-pricing {
   max-width: 1240px;
-  padding: 7rem 1rem 3rem 1rem;
+  padding: 5rem 1rem 3rem 1rem;
   margin: auto;
 }
 .section-pricing h2 {
+  font-variation-settings: "wght" 68, "slnt" 100;
   text-transform: uppercase;
   font-size: 2rem;
   text-align: center;
@@ -239,12 +363,17 @@ header .header-jbh img {
 }
 .container-pricings .pricing .fa {
   padding: 0.25rem 0;
+  font-variation-settings: "wght" 20, "slnt" 0;
 }
 .container-pricings .pricing h4 {
+  font-variation-settings: "wght" 68, "slnt" 100;
+  text-transform: uppercase;
   font-size: 2rem;
   margin: 0;
 }
 .container-pricings .pricing .desc {
+  text-transform: uppercase;
+  font-variation-settings: "wght" 68, "slnt" 100;
   min-height: 4rem;
   line-height: 1;
   padding-bottom: 1rem;
@@ -294,6 +423,9 @@ header .header-jbh img {
 }
 .container-service .left-container-service .up-left-container-service .participate-friends-div-service h3 {
   margin: 0;
+  font-family: "Goia Display";
+  font-variation-settings: "wght" 68, "slnt" 100;
+  line-height: 56px;
 }
 .container-service .left-container-service .up-left-container-service .exclu-trailer-div-service {
   display: flex;
@@ -303,8 +435,8 @@ header .header-jbh img {
 }
 .container-service .left-container-service .up-left-container-service .exclu-trailer-div-service p {
   color: #EC5C6C;
-  font-weight: bold;
-  font-style: italic;
+  font-variation-settings: "wght" 68, "slnt" 100;
+  text-transform: uppercase;
   font-size: 1.5rem;
   text-align: end;
   width: 75%;
@@ -341,8 +473,8 @@ header .header-jbh img {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-variation-settings: "wght" 68, "slnt" 100;
   font-size: 1.5rem;
-  font-weight: 700;
 }
 .container-service .left-container-service .down-left-container-service .jsb-feat-iim {
   width: 330px;
@@ -361,7 +493,13 @@ header .header-jbh img {
   width: 25%;
   padding: 1rem;
 }
+.container-service .right-container-service span {
+  font-variation-settings: "wght" 68, "slnt" 100;
+  line-height: 100%;
+  text-transform: uppercase;
+}
 .container-service .right-container-service p {
+  font-variation-settings: "wght" 20, "slnt" 0;
   font-size: 1.15rem;
   margin: 0;
 }
@@ -370,8 +508,13 @@ header .header-jbh img {
   height: 2rem;
 }
 .container-service .right-container-service h2 {
+  font-family: "Goia Display";
+  font-variation-settings: "wght" 68, "slnt" 100;
+  line-height: 110%;
+  text-transform: uppercase;
   font-size: 2rem;
   margin: 0;
+  margin-bottom: 10px;
 }
 .container-service .right-container-service div {
   position: relative;

@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="right-container-service">
-            <p>Nouveau jeu</p>
+            <span>Nouveau jeu</span>
             <h2>Karakaku</h2>
             <div class="separator">
                 <svg width="284" height="44" viewBox="0 0 284 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -33,9 +33,7 @@
                 </svg>
             </div>
             <p>
-                Le jeu musical qui met à l'épreuve ta vitesse de frappe !
-            </p>
-            <p>
+                <span>Le jeu musical qui met à l'épreuve ta vitesse de frappe !</span>
                 Retape les paroles de chansons aussi vite qu'elles sont chantées !
             </p>
             <div>

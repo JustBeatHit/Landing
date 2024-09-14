@@ -1,4 +1,4 @@
-.btn{
+.btn {
   background-color: $primary-color;
   color: white;
   padding: 0.5rem 1rem;
@@ -10,31 +10,39 @@
   gap: 0.5rem;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  font-variation-settings: 'wght' 68, 'slnt' 100;
+  font-family: 'Goia Display';
+  text-transform: uppercase;
 
-  &-primary{
+  &-primary {
     background-color: $primary-color;
 
-    &:hover{
+    &:hover {
       box-shadow: 0 0 10px 0 rgba(252, 148, 100, 0.8);
     }
   }
 
-  &-secondary{
+  &-secondary {
     background-color: $secondary-color;
     width: fit-content;
     margin: 0 auto;
+    font-variation-settings: 'wght' 68, 'slnt' 100;
+    font-family: 'Goia';
 
-    &:hover{
+    &:hover {
       box-shadow: 0 0 10px 0 rgb(236, 92, 108, 0.8);
     }
   }
 
-  &-white{
+  &-white {
+    font-family: 'Goia';
+    font-variation-settings: 'wght' 68, 'slnt' 100;
     background-color: white;
     color: $secondary-color;
     width: fit-content;
     margin: 0 auto;
-    &:hover{
+
+    &:hover {
       box-shadow: 0 0 10px 0 rgb(255, 255, 255, 0.8);
     }
   }
