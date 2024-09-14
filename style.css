@@ -345,6 +345,9 @@ header .header-jbh img {
 }
 
 @media only screen and (max-width: 748px) {
+  .section-pricing {
+    padding: 3rem 1rem;
+  }
   .container-pricings {
     flex-direction: column;
   }
@@ -437,10 +440,13 @@ header .header-jbh img {
   grid-row: 3;
   width: 100%;
   border-radius: 10px;
-  background-image: url("./public/assets/img/background_JBH_IIM.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+.services .jbh-feat-iim img {
+  width: 100%;
+  object-fit: contain;
 }
 .services .down-arrow {
   grid-column: 1;

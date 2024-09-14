@@ -63,6 +63,9 @@
 }
 
 @media only screen and (max-width: 748px) {
+  .section-pricing{
+    padding: 3rem 1rem;
+  }
   .container-pricings{
     flex-direction: column;
     .pricing {

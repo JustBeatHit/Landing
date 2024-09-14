@@ -82,10 +82,14 @@
     grid-row: 3;
     width: 100%;
     border-radius: 10px;
-    background-image: url('./public/assets/img/background_JBH_IIM.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+
+    img{
+      width: 100%;
+      object-fit: contain;
+    }
   }
   .down-arrow {
     grid-column: 1;
