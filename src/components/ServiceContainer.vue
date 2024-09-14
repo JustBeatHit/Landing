@@ -21,7 +21,7 @@
                 <p>Ouverture de notre beta 2025</p>
             </div>
             <div class="jbh-feat-iim">
-              <img src="../../public/assets/img/background_JBH_IIM.svg" alt="">
+              <img src="../../public/assets/img/background_JBH_IIM.png" alt="">
             </div>
         <div class="new-game">
             <p>Nouveau jeu</p>

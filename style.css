@@ -567,6 +567,7 @@ header .animated-background.inverse {
   background-color: #fff;
   display: flex;
   align-items: center;
+  padding: 2rem 3rem;
 }
 .services .jbh-feat-iim img {
   width: 100%;
