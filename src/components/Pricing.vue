@@ -1,12 +1,5 @@
-<script setup lang="ts">
-import ButtonInscription from './ButtonInscription.vue';
-
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { faCheck } from '@fortawesome/free-solid-svg-icons';
-
-</script>
 <template>
-    <div class="section-pricing">
+    <div id="section-pricing" class="section-pricing">
       <h2>Pricing</h2>
       <div class="container-pricings">
           <div class="pricing">
@@ -42,6 +35,14 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
             </ul>
             <ButtonInscription text="S'abonner" class="btn-white"></ButtonInscription>
           </div>
-        </div>
       </div>
-  </template>
+    </div>
+</template>
+
+<script setup lang="ts">
+import ButtonInscription from './ButtonInscription.vue';
+
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
+
+</script>

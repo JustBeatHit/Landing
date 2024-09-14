@@ -3,10 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 </script>
 <template>
-    <router-link to="/" class="btn">
+    <a href="https://justbeathit.vercel.app/" target="_blank" class="btn">
       <font-awesome-icon :icon="faArrowRight" />
           {{ text }}
-        </router-link>
+        </a>
 </template>
 
 <script lang="ts">

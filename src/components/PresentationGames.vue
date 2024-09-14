@@ -1,5 +1,5 @@
 <template>
-    <div class="section-games">
+    <section id="section-games" class="section-games">
       <h2>Nos Jeux</h2>
 
       <div class="games-container">
@@ -24,7 +24,7 @@
           </button>
         </div>
       </div>
-    </div>
+    </section>
   </template>
   
   <script>

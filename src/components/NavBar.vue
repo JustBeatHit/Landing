@@ -4,11 +4,11 @@ import ButtonInscription from './ButtonInscription.vue';
 <template>
   <nav>
     <ul>
-      <li><router-link to="/"><img src="../../public/assets/img/LogoMini.svg" alt="Vue logo" /></router-link></li>
+      <li><img src="../../public/assets/img/LogoMini.svg" alt="Vue logo" /></li>
     </ul>
     <ul>
-      <li><router-link to="/">Nos jeux</router-link></li>
-      <li><router-link to="/about">Pricing</router-link></li>
+      <li class="anchor"><a href="/#section-games">Nos jeux</a></li>
+      <li class="anchor"><a href="/#section-pricing">Pricing</a></li>
       <li>
         <ButtonInscription text="S'inscrire" class="btn-primary"/>
       </li>

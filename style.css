@@ -26,6 +26,7 @@
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -132,6 +133,10 @@ header nav li {
   text-transform: uppercase;
   cursor: pointer;
 }
+header nav li a {
+  text-decoration: none;
+  color: #fff;
+}
 header .header-jbh {
   display: flex;
   flex-direction: column;
@@ -229,9 +234,14 @@ header .animated-background.inverse {
   }
 }
 
+@media only screen and (max-width: 748px) {
+  nav .anchor {
+    display: none;
+  }
+}
 .section-games {
   max-width: 1240px;
-  padding: 7rem 1rem 3rem 1rem;
+  padding: 3rem 1rem;
   margin: auto;
 }
 .section-games h2 {
@@ -279,7 +289,7 @@ header .animated-background.inverse {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 }
 .section-games .games-container .game__content .game-icon {
   width: 320px;
@@ -474,7 +484,7 @@ header .animated-background.inverse {
 }
 .services {
   margin: 0 auto 5rem 0;
-  padding: 0 2rem;
+  padding: 0 2rem 5rem 2rem;
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(4, 1fr);

@@ -27,6 +27,11 @@ header {
       margin: 0 1rem;
       text-transform: uppercase;
       cursor: pointer;
+
+      a{
+        text-decoration: none;
+        color: #fff;
+      }
     }
   }
 
@@ -155,6 +160,14 @@ header {
 
     100% {
       transform: rotate(-360deg);
+    }
+  }
+}
+
+@media only screen and (max-width: 748px) {
+  nav {
+    .anchor {
+      display: none;
     }
   }
 }
