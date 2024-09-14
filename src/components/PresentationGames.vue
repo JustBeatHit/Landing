@@ -6,7 +6,7 @@
         <div
             v-for="(game, index) in games"
             :key="game.name"
-            :class="['game', { open: expandedIndex === index }]"
+            :class="['game', expandedIndex === index ? 'open' : 'close']"
         >
           <div class="game__content">
             <img class="game-icon header-icon" :src="'../assets/img/icon/' + game.icon + '.svg'" :alt="game.name + ' Logo'" />
