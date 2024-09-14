@@ -160,11 +160,40 @@ header .header-jbh img {
   background-color: #FC9464;
 }
 .section-games .games-container .game:nth-child(3).open .game__content__logo {
-  width: 90%;
+  width: 85%;
 }
 .section-games .games-container .game.close .game__content__desc, .section-games .games-container .game.close .game__content .header-icon {
   transition: all 0.3s ease-in-out;
   animation: opacity-toggle 1s ease-in-out;
+}
+.section-games .games-container .game__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 4rem;
+}
+.section-games .games-container .game__content .game-icon {
+  width: 320px;
+  object-fit: contain;
+  margin-top: -10rem;
+}
+.section-games .games-container .game__content__desc {
+  width: 100%;
+}
+.section-games .games-container .game__content__desc h2 {
+  font-size: 1.75rem;
+  min-height: 5rem;
+}
+.section-games .games-container .game__content__desc h3 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+.section-games .games-container .game__content__desc p {
+  display: none;
+}
+.section-games .games-container .game__content__logo {
+  display: none;
 }
 .section-games .games-container .game.open {
   width: 100%;
@@ -198,42 +227,13 @@ header .header-jbh img {
   display: block;
   position: absolute;
   top: 50%;
-  right: -45%;
-  width: 100%;
+  right: -40%;
+  width: 95%;
   transform: translate(0, -50%);
 }
 .section-games .games-container .game.open .game__content__logo .game-icon {
   width: 100%;
   margin-top: 0;
-}
-.section-games .games-container .game__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 4rem;
-}
-.section-games .games-container .game__content .game-icon {
-  width: 320px;
-  object-fit: contain;
-  margin-top: -10rem;
-}
-.section-games .games-container .game__content__desc {
-  width: 100%;
-}
-.section-games .games-container .game__content__desc h2 {
-  font-size: 1.75rem;
-  min-height: 5rem;
-}
-.section-games .games-container .game__content__desc h3 {
-  font-size: 1.1rem;
-  margin: 0.5rem 0;
-}
-.section-games .games-container .game__content__desc p {
-  display: none;
-}
-.section-games .games-container .game__content__logo {
-  display: none;
 }
 
 @media only screen and (max-width: 748px) {

@@ -31,7 +31,7 @@
   export default {
     data() {
       return {
-        expandedIndex: null,
+        expandedIndex: 0,
         games: [
           { name: "Blind Test", headline:"le Blind Test est un jeu musical qui met à l'épreuve ton oreille et ta culture musicale !", description:"Une chanson est jouée, mais avec un instrumental différent, et c'est à toi de deviner à la fois le titre de la chanson et l'instrumental utilisé. Ce jeu va challenger ta capacité à reconnaître les morceaux et te permettra de comparer tes résultats avec ceux de tes amis.", icon: "speaker" },
           { name: "Paroles en Tête", headline:"Paroles en tête est un jeu musical qui met à l'épreuve ta mémoire et ta connaissance des paroles !", description:"Écoute attentivement une chanson, puis lorsque la musique s'interrompt, c'est à toi de compléter les paroles manquantes. Ce jeu va tester ta capacité à te souvenir des paroles et te permettra de comparer tes performances avec celles de tes amis.", icon: "music-file"},
