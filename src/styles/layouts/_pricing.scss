@@ -7,7 +7,6 @@
     font-variation-settings: 'wght' 68, 'slnt' 100;
     text-transform: uppercase;
     font-size: 2rem;
-    text-align: center;
   }
 }
 
@@ -74,7 +73,10 @@
 }
 
 @media only screen and (max-width: 748px) {
-  .container-pricings {
+  .section-pricing{
+    padding: 3rem 1rem;
+  }
+  .container-pricings{
     flex-direction: column;
 
     .pricing {

@@ -9,7 +9,7 @@ import ButtonInscription from './ButtonInscription.vue';
      <div class="animated-background"></div>
      <div class="animated-background inverse"></div>
     <div class="header-jbh">
-      <img src="../assets/img/Logo.svg" alt="JBH illustration" />
+      <img src="../../public/assets/img/Logo.svg" alt="Vue logo" />
       <ButtonInscription text="S'inscrire" class="btn-primary"/>
     </div>
   </header>
