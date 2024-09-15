@@ -363,6 +363,7 @@ header .animated-background.inverse {
 }
 .section-games .games-container .game.open .game__content__desc p {
   display: block;
+  font-variation-settings: "wght" 20, "slnt" 0;
 }
 .section-games .games-container .game.open .game__content__logo {
   display: block;
