@@ -93,6 +93,21 @@ export default {
           ease: "power2.out",
         });
       });
+      this.$nextTick(() => {
+        gsap.from('.container-pricings .pricing', {
+          scrollTrigger: {
+            trigger: '.container-pricings',
+            start: 'top 80%',
+            end: 'bottom 20%',
+            toggleActions: 'play reverse play reverse',
+          },
+          opacity: 0,
+          x: 300,
+          duration: 1,
+          ease: "power2.out",
+          stagger: 0.2,
+        });
+      });
     },
     expandGame(index) {
       this.expandedIndex = index === this.expandedIndex ? null : index;

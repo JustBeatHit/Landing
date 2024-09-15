@@ -39,32 +39,9 @@
     </div>
 </template>
 
-<script>
+<script setup lang="ts">
+import ButtonInscription from './ButtonInscription.vue';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import gsap from "../plugin/gsap";
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
-export default {
-  mounted() {
-    this.initScrollAnimations();
-  },
-  methods: {
-    initScrollAnimations() {
-      this.$nextTick(() => {
-        gsap.from('.container-pricings .pricing', {
-          scrollTrigger: {
-            trigger: '.container-pricings',
-            start: 'top 80%',
-            end: 'bottom 20%',
-            toggleActions: 'play reverse play reverse',
-          },
-          opacity: 0,
-          x: 300,
-          duration: 1,
-          ease: "power2.out",
-          stagger: 0.2,
-        });
-      });
-    },
-  },
-};
 </script>
