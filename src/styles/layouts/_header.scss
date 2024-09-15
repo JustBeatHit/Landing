@@ -33,6 +33,16 @@ header {
         color: #fff;
       }
     }
+    .anchor{
+      a {
+        transition: all 0.3s ease-in-out;
+        border-bottom: 2px solid transparent;
+
+        &:hover {
+          border-color: #fff;
+        }
+      }
+    }
   }
 
   .header-jbh {
@@ -43,6 +53,7 @@ header {
     justify-content: center;
     text-transform: uppercase;
     padding-bottom: 8rem;
+    animation: opacity-toggle 1s ease-in-out;
 
     img {
       width: 60%;
@@ -51,12 +62,6 @@ header {
     }
 
   }
-
-  // .bg-image {
-  //   position: absolute;
-  //   left: 0;
-  //   right: 0;
-  // }
 
   .animated-background {
     width: 60vw;
@@ -161,6 +166,18 @@ header {
     100% {
       transform: rotate(-360deg);
     }
+  }
+}
+
+@keyframes opacity-toggle {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 

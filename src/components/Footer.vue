@@ -14,14 +14,14 @@
           </div>
         </div>
         <div class="footer-section">
-          <h3>PRODUCT</h3>
+          <h2>PRODUCT</h2>
           <ul>
             <li><a href="/#section-games">Nos jeux</a></li> <!-- Matching navbar link -->
             <li><a href="/#section-pricing">Pricing</a></li> <!-- Matching navbar link -->
           </ul>
         </div>
         <div class="footer-section">
-  <h3>CONTACT US</h3>
+  <h2>CONTACT US</h2>
   <p><i class="fas fa-envelope"></i> JustBeatIt@gmail.com</p>
   <p><i class="fas fa-map-marker-alt"></i> 47 Bd de Pesaro, 92000 Nanterre</p>
 </div>

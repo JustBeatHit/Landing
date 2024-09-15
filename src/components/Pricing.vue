@@ -41,7 +41,6 @@
 
 <script setup lang="ts">
 import ButtonInscription from './ButtonInscription.vue';
-
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
