@@ -33,6 +33,16 @@ header {
         color: #fff;
       }
     }
+    .anchor{
+      a {
+        transition: all 0.3s ease-in-out;
+        border-bottom: 2px solid transparent;
+
+        &:hover {
+          border-color: #fff;
+        }
+      }
+    }
   }
 
   .header-jbh {
